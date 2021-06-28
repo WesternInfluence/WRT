@@ -1,7 +1,7 @@
 Name                "West's Room Tweaks"  
 Author              "Western_Influence" 
 Description         "This mod aims to fix room's to allow for alternate furniture items, sizing and placement of rooms for ease of planning. This will likely change frequently."  
-version             1.2.0
+version             v1.2.0
 Date                06/30/2021
 URL                 https://steamcommunity.com/id/western_influence
 IsTranslation       false
