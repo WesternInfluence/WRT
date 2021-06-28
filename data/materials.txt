@@ -5,7 +5,7 @@ BEGIN Room
     Capturable           true
     Properties           Housing
     Properties           QualityGraded
-    BEGIN Requirement Type Object  Id Bed  END
+    BEGIN Requirement Type Object  Id Bed Alt Mattress,ComfyBed,OldBed END
     BEGIN Requirement Type Object  Id Toilet  END
     BEGIN LikelyObject	Id		JailDoor		END
     BEGIN LikelyObject  Id      Bookshelf       END
@@ -71,7 +71,7 @@ BEGIN Room
     Name                 Dormitory
     Properties           Housing
     Properties           QualityGraded
-    BEGIN Requirement Type Object  Id Bed Alt BunkBed END
+    BEGIN Requirement Type Object  Id Bed Alt BunkBed,Mattress,ComfyBed,OldBed END
     BEGIN Requirement Type Object  Id Toilet  END
     BEGIN LikelyObject	Id		JailDoor		END
     BEGIN LikelyObject  Id      Bookshelf       END
@@ -144,7 +144,6 @@ END
 
 BEGIN Room       
     Name                 Kitchen  
-    BEGIN Requirement Type Indoor  END
     BEGIN Requirement Type Object  Id Cooker  END
     BEGIN Requirement Type Object  Id Fridge  END
     BEGIN Requirement Type Object  Id Sink END
@@ -167,7 +166,6 @@ END
 
 BEGIN Room       
     Name                 Yard  
-    BEGIN Requirement Type MinimumSize  x 5  y 5  END
     BEGIN Requirement Type Secure END
     BEGIN LikelyObject	Id		WeightsBench	END
     BEGIN LikelyObject	Id		PhoneBooth		END
@@ -179,18 +177,19 @@ BEGIN Room
     BEGIN Contraband    Id      Saw             END
     BEGIN Contraband    Id      Drill           END
     BEGIN Contraband    Id      Hammer          END
+    Properties           StaffCanUseFacilities
 END
 
 BEGIN Room       
-    Name Exports  
+    Name Exports
 END
 
 BEGIN Room       
-    Name Deliveries  
+    Name Deliveries
 END
 
 BEGIN Room       
-    Name Garbage  
+    Name Garbage
 END
 
 BEGIN Room       
@@ -199,6 +198,7 @@ BEGIN Room
     BEGIN Requirement Type Object  Id OfficeDesk  END
     BEGIN Requirement Type Object  Id Table  END    
     BEGIN Requirement Type Object  Id Chair  END
+    Properties           RequiresSector
 END
 
 BEGIN Room       
@@ -212,10 +212,9 @@ BEGIN Room
     Research             PrisonLabour 
     Properties           PrisonersCanWork    
     Qualification        WorkshopInduction
-    BEGIN Requirement Type MinimumSize  x 5  y 5  END
     BEGIN Requirement Type Object   Id WorkshopSaw  END
     BEGIN Requirement Type Object   Id WorkshopPress END
-    BEGIN Requirement Type Object   Id Table END
+    BEGIN Requirement Type Object   Id Table Alt SmallTable END
     BEGIN LikelyObject  Id      CarpenterTable  END
     BEGIN Contraband    Id      Saw             END
     BEGIN Contraband    Id      Screwdriver     END
@@ -235,6 +234,7 @@ BEGIN Room
     BEGIN Contraband    Id      Baton           END
     BEGIN Contraband    Id      Cigs            END
     BEGIN Contraband    Id      Lighter         END
+    Properties           StaffCanUseFacilities
 END
 
 BEGIN Room       
@@ -248,12 +248,12 @@ BEGIN Room
     BEGIN Contraband    Id      Booze           END
     BEGIN Contraband    Id      Cigs            END
     BEGIN Contraband    Id      Lighter         END
+    Properties           StaffCanUseFacilities
 END
 
 BEGIN Room       
     Name                 MedicalWard  
     Research             Health  
-    BEGIN Requirement Type Indoor  END
     BEGIN Requirement Type Object  Id MedicalBed  END
     BEGIN Contraband    Id      Needle          END
     BEGIN Contraband    Id      Poison          END
@@ -273,8 +273,8 @@ END
 
 BEGIN Room       
     Name                 CommonRoom  
-    BEGIN Requirement Type Indoor  END
     BEGIN LikelyObject	Id		Bench			END
+    BEGIN LikelyObject  Id      SmallBench      END
     BEGIN LikelyObject	Id		PoolTable		END
     BEGIN LikelyObject	Id		TvLarge			END
     BEGIN LikelyObject	Id		TvSmall			END
@@ -283,11 +283,11 @@ END
 BEGIN Room       
     Name                 Laundry
     Research             PrisonLabour
-    BEGIN Requirement Type Indoor  END
     BEGIN Requirement Type Object  Id LaundryMachine  END
     BEGIN Requirement Type Object  Id LaundryBasket  END
-    BEGIN Requirement Type Object  Id IroningBoard END
+    BEGIN Requirement Type Object  Id IroningBoard Alt IroningBoardShort END
     BEGIN LikelyObject	Id		Table			END
+    BEGIN LikelyObject  Id      SmallTable      END
     Properties           PrisonersCanWork
     Properties           RequiresSector
 END
@@ -296,15 +296,12 @@ BEGIN Room
     Name                 CleaningCupboard
     Research             Cleaning
     Properties           PrisonersCanWork
-    BEGIN Requirement Type Indoor  END
-    BEGIN Requirement Type MinimumSize  x 3  y 3  END
     BEGIN Contraband    Id      Poison  END
     BEGIN Contraband    Id      Club END
 END
 
 BEGIN Room       
     Name                 Visitation
-    BEGIN Requirement Type Indoor  END
     BEGIN Requirement Type Object  Id VisitorTable  Alt VisitorTableSecure END
     BEGIN LikelyObject	Id		VisitorTableSecure	END
     BEGIN Contraband    Id      Cigs    END
@@ -317,8 +314,6 @@ END
 
 BEGIN Room       
     Name                 ParoleRoom
-    BEGIN Requirement Type Indoor  END
-    BEGIN Requirement Type MinimumSize  x 5  y 5  END
     BEGIN Requirement Type Object  Id VisitorTable  END
 END
 
@@ -326,35 +321,34 @@ BEGIN Room
     Name                 Solitary
     BEGIN Requirement Type Enclosed END
     BEGIN LikelyObject	Id		SolitaryDoor	END
+    BEGIN LikelyObject  Id      SecureDoor      END
     BEGIN Incompatible Zone FamilyCell END
 END
 
 BEGIN Room       
     Name                 Kennel  
     Research             Dogs
-    BEGIN Requirement Type MinimumSize  x 5  y 5  END
-    BEGIN Requirement Type Enclosed END
     BEGIN Requirement Type Object  Id DogCrate  END
+    BEGIN LikelyObject  Id      DogBowl         END
+    Properties           StaffCanUseFacilities
 END
 
 BEGIN Room       
     Name                 Armoury
     Research             Armoury
-    BEGIN Requirement Type Indoor END
     BEGIN Requirement Type Object  Id WeaponRack  END
     BEGIN Requirement Type Object  Id GuardLocker END
-    BEGIN Requirement Type Object  Id Table END
+    BEGIN Requirement Type Object  Id Table Alt SmallTable END
     BEGIN Contraband    Id      Shotgun         END
     BEGIN Contraband    Id      Gun             END
     BEGIN Contraband    Id      Tazer           END
     BEGIN Contraband    Id      Baton           END
     BEGIN Contraband    Id      Rifle           END
+    Properties           StaffCanUseFacilities
 END
 
 BEGIN Room       
     Name                 Staffroom
-    BEGIN Requirement Type Indoor END
-    BEGIN Requirement Type MinimumSize  x 4  y 4  END
     BEGIN Requirement Type Object  Id SofaChairDouble END
     BEGIN Requirement Type Object  Id DrinkMachine  END
     BEGIN LikelyObject	Id		Radio	END
@@ -363,12 +357,13 @@ BEGIN Room
     BEGIN Contraband    Id      Cigs            END
     BEGIN Contraband    Id      Lighter         END
     BEGIN Contraband    Id      MobilePhone     END
+    Properties           StaffCanUseFacilities
+    Properties			 DiningArea
+    Properties           RequiresSector
 END
 
 BEGIN Room       
     Name                 Library  
-    BEGIN Requirement Type MinimumSize  x 5  y 5  END
-    BEGIN Requirement Type Indoor END
     BEGIN Requirement Type Object  Id LibraryBookshelf  END
     BEGIN Requirement Type Object Id SortingTable END
     BEGIN Contraband    Id      Scissors        END
@@ -381,7 +376,6 @@ END
 BEGIN Room       
     Name                 Forestry
     Research             GroundsKeeping
-    BEGIN Requirement Type MinimumSize  x 5  y 5  END
     BEGIN Requirement Type Outdoor END
     BEGIN Contraband  Id   Saw END
     BEGIN Contraband  Id   Axe END
@@ -391,16 +385,12 @@ END
 BEGIN Room       
     Name                 Classroom
     Research             Education
-    BEGIN Requirement Type MinimumSize  x 5  y 5  END
-    BEGIN Requirement Type Indoor END
     BEGIN Requirement Type Object  Id SchoolDesk END
     BEGIN Requirement Type Object  Id OfficeDesk END
 END
 
 BEGIN Room
     Name                Chapel
-    BEGIN Requirement Type MinimumSize x 6 y 6 END
-    BEGIN Requirement Type Indoor END
     BEGIN Requirement Type Object Id Altar END
     BEGIN Requirement Type Object Id Pews END
     BEGIN Requirement Type Object Id PrayerMat END
@@ -409,10 +399,8 @@ END
 
 BEGIN Room
     Name                MailRoom
-    BEGIN Requirement Type MinimumSize x 5 y 5 END
-    BEGIN Requirement Type Indoor END
     BEGIN Requirement Type Object Id SortingTable END
-    BEGIN Requirement Type Object Id Table END
+    BEGIN Requirement Type Object Id Table Alt SmallTable END
     Properties          PrisonersCanWork
     Properties          BlockMaterialTransfer
     WorkGroup           MailRoom
@@ -421,9 +409,7 @@ END
 
 BEGIN Room
     Name                Shop
-    BEGIN Requirement Type MinimumSize x 4 y 4 END
-    BEGIN Requirement Type Indoor END
-    BEGIN Requirement Type Object Id Table END
+    BEGIN Requirement Type Object Id Table Alt SmallTable END
     BEGIN Requirement Type Object Id ShopShelf END
     BEGIN Requirement Type AdjacentObject Id ShopFront END
     Properties          PrisonersCanWork
