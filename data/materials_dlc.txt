@@ -2542,9 +2542,6 @@ BEGIN Room
 	VersionAdded         2000
     Properties           Housing
 	Properties			 HasPaddedWalls
-    BEGIN Requirement Type MinimumSize  x 5  y 5  END
-    BEGIN Requirement Type Enclosed END
-    BEGIN Requirement Type Indoor  END
     BEGIN Requirement Type Object  Id Toilet  END
     BEGIN Requirement Type Object  Id Bench Alt SmallBench  END
     BEGIN LikelyObject	Id		SmallBench		END
@@ -2562,9 +2559,6 @@ BEGIN Room
 	VersionAdded		 2000
     Properties           Housing
 	Properties			 HasPaddedWalls
-    BEGIN Requirement Type MinimumSize  x 2  y 3  END
-    BEGIN Requirement Type Enclosed END
-    BEGIN Requirement Type Indoor  END
     BEGIN Requirement Type Object  Id Bed Alt Mattress,ComfyBed,OldBed END
     BEGIN Requirement Type Object  Id Toilet     END
     BEGIN LikelyObject	Id		JailDoor		 END
@@ -2584,7 +2578,6 @@ BEGIN Room
 	VersionAdded		 2000
 	Properties           QualityGraded
 
-    BEGIN Requirement Type MinimumSize  x 4  y 4  END
     BEGIN Requirement Type Object  Id OfficeDesk  END
     BEGIN Requirement Type Object  Id Chair  Alt OfficeChair,LeatherChair,WoodenStool  END
 	BEGIN Requirement Type Object  Id SofaChairDouble  Alt LeatherSofa  END
@@ -2995,8 +2988,6 @@ BEGIN Room
 	Properties			 QualityGraded
 	Properties           PrisonerRelax
 
-    BEGIN Requirement Type MinimumSize  x 7  y 7  END
-    BEGIN Requirement Type Indoor  END
     BEGIN Requirement Type Object  Id WeightsBench   END
     BEGIN Requirement Type Object  Id GymMat     	 END
     BEGIN LikelyObject	Id		DrinkMachine		 END
@@ -4751,7 +4742,6 @@ END
 
 BEGIN Room       
     Name                 VegetableAllotment
-    BEGIN Requirement Type MinimumSize  x 5  y 5  END
     BEGIN Requirement Type Outdoor END	
     BEGIN Requirement Type Object  Id Shed  END
 	Qualification        FarmTraining
@@ -4785,7 +4775,6 @@ END
 
 BEGIN Room       
     Name                 FruitOrchard
-    BEGIN Requirement Type MinimumSize  x 5  y 5  END
     BEGIN Requirement Type Outdoor END
     BEGIN Requirement Type Object  Id Shed  END    
 	Qualification        FarmTraining
@@ -4813,7 +4802,6 @@ END
 
 BEGIN Room       
     Name                 FarmingField
-    BEGIN Requirement Type MinimumSize  x 8  y 8  END
     BEGIN Requirement Type Outdoor END
     BEGIN Requirement Type Object  Id Shed  END
 	Qualification        FarmTraining
@@ -6863,7 +6851,6 @@ BEGIN Room
 
     Name                   TherapyRoom
     BEGIN Requirement Type Indoor                    END
-    BEGIN Requirement Type MinimumSize  x 5  y 5     END
     BEGIN Requirement Type Object  Id Chair          END
     BEGIN LikelyObject  Id      OfficeChair          END
     BEGIN ContrabandEM  Id  Booze                    END
@@ -6917,9 +6904,6 @@ END
 
 BEGIN Room       
     Name                 Restaurant  
-
-    BEGIN Requirement Type MinimumSize  x 5  y 5     END
-    BEGIN Requirement Type Indoor  END
 
     BEGIN Requirement Type Object  Id Cooker  END
     BEGIN Requirement Type Object  Id Fridge  Alt	TallFridge	END
@@ -7031,10 +7015,6 @@ END
 
 BEGIN Room       
     Name                 Bakery  
-
-    BEGIN Requirement Type MinimumSize x 5 y 5 END
-    BEGIN Requirement Type Indoor  END
-
 
     BEGIN Requirement Type Object  Id DoughMixer	END
     BEGIN Requirement Type Object  Id Oven	END
