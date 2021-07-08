@@ -195,7 +195,7 @@ END
 BEGIN Room       
     Name                 Intake  
     BEGIN Requirement Type Object  Id OfficeDesk  END
-    BEGIN Requirement Type Object  Id Table  END    
+    BEGIN Requirement Type Object  Id Table Alt SmallTable  END    
     BEGIN Requirement Type Object  Id Chair  END
     Properties           RequiresSector
 END
