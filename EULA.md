@@ -1,4 +1,5 @@
 **End-User License Agreement (EULA) of WRT**
+
 This End-User License Agreement ("EULA") is a legal agreement between you and
 Western Influence. Our EULA was created by EULA Template for WRT.
 
@@ -42,15 +43,19 @@ a) Edit, alter, modify, adapt, translate or otherwise change the whole
 or any part of the Software nor permit the whole or any part of the Software
 to be combined with or become incorporated in any other software, nor decompile,
 disassemble or reverse engineer the Software or attempt to do any such things
+
 b) Reproduce, copy, distribute, resell or otherwise use the Software for any
 commercial purpose
+
 c) Allow any third party to use the Software on behalf of or for the benefit of
 any third party
+
 d) Use the Software in any way which breaches any applicable local, national or
 international law se the Software for any purpose that Western Influence considers
 is a breach of his EULA agreement
 
 **Intellectual Property and Ownership**
+
 Western Influence shall at all times retain ownership of the Software as
 originally downloaded by you and all subsequent downloads of the Software
 by you. The Software (and the copyright, and other intellectual property
@@ -61,6 +66,7 @@ Western Influence reserves the right to grant licences to use the Software to
 third parties.
 
 **Termination**
+
 This EULA agreement is effective from the date you first use the Software
 and shall continue until terminated. You may terminate it at any time upon
 uninstalling and removing the Software from your device(s).
@@ -72,6 +78,7 @@ Software. The provisions that by their nature continue and survive will survive
 any termination of this EULA agreement.
 
 **Governing Law**
+
 This EULA agreement, and any dispute arising out of or in connection with this
 EULA agreement, shall be governed by and construed in accordance with the laws
 of the state of Michigan.
