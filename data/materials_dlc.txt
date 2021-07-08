@@ -5008,8 +5008,6 @@ END
 
 BEGIN Room       
     Name                 Pantry
-    BEGIN Requirement Type 		Enclosed 		END
-    BEGIN Requirement Type 		Indoor  		END
 	BEGIN LikelyObject	Id		TallFridge		END
 	BEGIN LikelyObject	Id		StorageShelf	END
    	Research             Farming
