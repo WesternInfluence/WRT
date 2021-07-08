@@ -194,7 +194,6 @@ END
 
 BEGIN Room       
     Name                 Intake  
-    BEGIN Requirement Type Indoor  END
     BEGIN Requirement Type Object  Id OfficeDesk  END
     BEGIN Requirement Type Object  Id Table  END    
     BEGIN Requirement Type Object  Id Chair  END
@@ -203,7 +202,6 @@ END
 
 BEGIN Room       
     Name                 Execution  
-    BEGIN Requirement Type Indoor  END
     BEGIN Requirement Type Object  Id ElectricChair  END
 END
 
