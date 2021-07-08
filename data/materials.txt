@@ -240,7 +240,6 @@ BEGIN Room
     BEGIN Requirement Type Object  Id OfficeDesk  END
     BEGIN Requirement Type Object  Id Chair Alt OfficeChair  END
     BEGIN Requirement Type Object  Id FilingCabinet  END
-    BEGIN Requirement Type Indoor  END
     BEGIN LikelyObject	Id		StaffDoor	    END
     BEGIN Contraband    Id      MobilePhone     END
     BEGIN Contraband    Id      Booze           END
