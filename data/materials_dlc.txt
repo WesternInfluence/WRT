@@ -6154,7 +6154,6 @@ BEGIN Room
 
     Research             GroundsKeeping
     BEGIN Requirement Type 		Outdoor 				END	
-    BEGIN Requirement Type 		MinimumSize  x 5  y 5   		END
 	BEGIN LikelyObject 		Id		Shed		 	END
 	BEGIN LikelyObject 		Id		CompostBin		END
 	BEGIN LikelyObject		Id		FlowerRoseBush		END
