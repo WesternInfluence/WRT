@@ -2584,6 +2584,8 @@ BEGIN Room
     BEGIN Requirement Type Object  Id FilingCabinet  END
     BEGIN LikelyObject	Id		StaffDoor	    END
     BEGIN LikelyObject	Id		LeatherChair	END
+    BEGIN LikelyObject	Id		StaffDoor	    END
+    BEGIN LikelyObject	Id		LeatherChair	END
 	
 	BEGIN LikelyObject	Id		LeatherSofa	END
 	BEGIN LikelyObject	Id		MedicineCabinetPsych	END
