@@ -1,7 +1,7 @@
 **End-User License Agreement (EULA) of WRT**
 
 This End-User License Agreement ("EULA") is a legal agreement between you and
-Western Influence. Our EULA was created by EULA Template for WRT.
+Western Influence.
 
 This EULA agreement governs your acquisition and use of our WRT software ("Software")
 directly from Western Influence or indirectly through a Western Influence authorized
@@ -29,6 +29,7 @@ services, and support services for the Software, unless other terms accompany th
 items on delivery. If so, those terms apply.
 
 **License Grant**
+
 Western Influence hereby grants you a personal, non-transferable, non-exclusive
 licence to use the WRT software on your devices in accordance with the terms of
 this EULA agreement.
