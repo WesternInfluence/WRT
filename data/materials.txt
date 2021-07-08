@@ -261,7 +261,6 @@ END
 BEGIN Room       
     Name                 Morgue  
     Research             Health  
-    BEGIN Requirement Type Indoor  END
     BEGIN Requirement Type Object  Id MorgueSlab  END
     BEGIN Contraband    Id      Scissors         END
     BEGIN Contraband    Id      Knife END
