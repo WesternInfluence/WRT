@@ -1,4 +1,4 @@
-**End-User License Agreement (EULA) of WRT**
+# End-User License Agreement (EULA) of WRT
 
 This End-User License Agreement ("EULA") is a legal agreement between you and
 Western Influence.
