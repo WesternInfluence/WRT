@@ -2582,7 +2582,6 @@ BEGIN Room
     BEGIN Requirement Type Object  Id Chair  Alt OfficeChair,LeatherChair,WoodenStool  END
 	BEGIN Requirement Type Object  Id SofaChairDouble  Alt LeatherSofa  END
     BEGIN Requirement Type Object  Id FilingCabinet  END
-    BEGIN Requirement Type Indoor  END
     BEGIN LikelyObject	Id		StaffDoor	    END
     BEGIN LikelyObject	Id		LeatherChair	END
 	
