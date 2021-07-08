@@ -2582,10 +2582,10 @@ BEGIN Room
     BEGIN Requirement Type Object  Id Chair  Alt OfficeChair,LeatherChair,WoodenStool  END
 	BEGIN Requirement Type Object  Id SofaChairDouble  Alt LeatherSofa  END
     BEGIN Requirement Type Object  Id FilingCabinet  END
-    BEGIN Requirement Type Indoor  END
     BEGIN LikelyObject	Id		StaffDoor	    END
     BEGIN LikelyObject	Id		LeatherChair	END
-	
+	BEGIN LikelyObject  Id      GlassWindow     END
+    BEGIN LikelyObject  Id      GlassWindowLarge    END
 	BEGIN LikelyObject	Id		LeatherSofa	END
 	BEGIN LikelyObject	Id		MedicineCabinetPsych	END
 	BEGIN LikelyObject	Id		RorschachTest	END
