@@ -269,11 +269,52 @@ END
 
 BEGIN Room       
     Name                 CommonRoom  
+    Properties           QualityGraded
+	Properties           PrisonerRelax
+
+    BEGIN Requirement Type Indoor  END
+    BEGIN LikelyObject	Id		SmallBench		END
+    BEGIN LikelyObject	Id		OakBench		END
     BEGIN LikelyObject	Id		Bench			END
-    BEGIN LikelyObject  Id      SmallBench      END
     BEGIN LikelyObject	Id		PoolTable		END
-    BEGIN LikelyObject	Id		TvLarge			END
-    BEGIN LikelyObject	Id		TvSmall			END
+    BEGIN LikelyObject	Id		LeatherChair	END
+    BEGIN LikelyObject	Id		Plant			END
+	BEGIN LikelyObject	Id		WoodenTable		END
+    BEGIN LikelyObject  Id      ShortBookcase   END
+    BEGIN LikelyObject  Id      OvalStaffTable  END
+	BEGIN LikelyObject	Id		Painting1		END
+	BEGIN LikelyObject	Id		Painting2		END
+	BEGIN LikelyObject	Id		ChessTable		END
+	BEGIN LikelyObject	Id		PhoneBooth		END
+	BEGIN LikelyObject	Id		Radio 			END
+	BEGIN LikelyObject	Id		ArcadeCabinet	END
+	BEGIN LikelyObject	Id		Chair			END
+	BEGIN LikelyObject	Id		SofaChairDouble END
+	BEGIN LikelyObject	Id		SofaChairSingle END
+	BEGIN LikelyObject	Id		Stool			END
+	BEGIN LikelyObject	Id		PlantCactus		END
+	BEGIN LikelyObject	Id		OakTable		END
+	BEGIN LikelyObject	Id		TableFootball	END
+	BEGIN LikelyObject	Id		TableTennis		END
+	BEGIN LikelyObject	Id		ComputerStation	END
+	BEGIN LikelyObject	Id		SnackMachine    END
+    BEGIN LikelyObject	Id		PunchBag 		END
+	BEGIN LikelyObject  Id		DumbbellRack	END
+	BEGIN LikelyObject	Id		GymMat			END
+	BEGIN LikelyObject	Id		Tv				END
+	BEGIN LikelyObject	Id		LargeTv			END
+
+	BEGIN Grading		Type	RoomSize	Size	25		END
+	BEGIN Grading		Type	RoomSize	Size	50		END
+	BEGIN Grading       Type    Item    Id      ComputerStation Quantity 4 GradeEffect 2   END	
+	BEGIN Grading       Type    Item    Id      PhoneBooth	END
+	BEGIN Grading       Type    Item    Id      PoolTable Alt TableFootball,TableTennis Multi true END
+	BEGIN Grading       Type    Item    Id      Tv Alt LargeTv  END
+	BEGIN Grading       Type    Item    Id      ChessTable  END
+	BEGIN Grading       Type    Item    Id      Radio		END
+	BEGIN Grading       Type    Item    Id      ArcadeCabinet   END
+	BEGIN Grading       Type    Item    Id      Cctv	GradeEffect -1 END
+	BEGIN Grading		Type	Item	Id		SnackMachine	END
 END
 
 BEGIN Room       
