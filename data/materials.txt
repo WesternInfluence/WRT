@@ -145,7 +145,7 @@ END
 BEGIN Room       
     Name                 Kitchen  
     BEGIN Requirement Type Object  Id Cooker  END
-    BEGIN Requirement Type Object  Id Fridge Alt TallFridge END
+    BEGIN Requirement Type Object  Id Fridge  END
     BEGIN Requirement Type Object  Id Sink END
     BEGIN LikelyObject	Id		Bin				END
     BEGIN LikelyObject	Id		StaffDoor	    END
